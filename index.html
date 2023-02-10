@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="login-page">
+        <input type="checkbox" id="form-switch" />
+        <form id="login-form" action="" method="post">
+            <h2>Login</h2>
+            <input type="text" placeholder="email" id="email" required />
+            <input type="password" placeholder="Password" id="password" required />
+            <button type="submit" id="btn" onclick="buttonClick(event)">
+          login
+        </button>
+            <label for="form-switch"><span>Register</span></label>
+        </form>
+        <form id="register-form" action=" " method="post">
+            <h2>register</h2>
+            <input type="email " placeholder="Email" id="email2" required />
+            <input type="password " placeholder="Password" id="password2" required />
+            <button type="submit" id="btn2" onclick="registerClick(event)">
+          Register
+        </button>
+            <label for="form-switch">Already Member ? Sign In Now..</label>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
