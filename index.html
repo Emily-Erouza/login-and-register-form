@@ -6,28 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <title>Login and Register form</title>
 </head>
 
 <body>
     <div class="login-page">
+
         <input type="checkbox" id="form-switch" />
+
         <form id="login-form" action="" method="post">
             <h2>Login</h2>
-            <input type="text" placeholder="email" id="email" required />
-            <input type="password" placeholder="Password" id="password" required />
-            <button type="submit" id="btn" onclick="buttonClick(event)">
-          login
-        </button>
+            <label for="email">Email</label>
+            <input type="email" placeholder=" Enter your email" id="email" required />
+            <label for="password">Password</label>
+            <input type="password" placeholder=" Enter your Password" id="password" required />
+            <button type="submit" id="btn" value="submit" onclick="loginClick(event)">
+                login
+            </button>
             <label for="form-switch"><span>Register</span></label>
         </form>
+
         <form id="register-form" action=" " method="post">
             <h2>Register</h2>
-            <input type="email " placeholder="Email" id="email2" required />
-            <input type="password " placeholder="Password" id="password2" required />
-            <button type="submit" id="btn2" onclick="registerClick(event)">
-          Register
-        </button>
-            <label for="form-switch">Already Member ? Sign In Now..</label>
+            <p>Please fill in this form to create an account.</p>
+            <label for="name">Name</label>
+            <input type="name " placeholder=" Enter your Name" id="name2" required />
+            <label for="surname">Surname</label>
+            <input type="surname " placeholder="Enter your surname" id="surname2" required />
+            <label for="email">Email</label>
+            <input type="email " placeholder=" Enter your Email" id="email2" required />
+            <label for="password">Password</label>
+            <input type="password " placeholder=" Enter your password" id="password2" required />
+            <label for="verify passowrd">Verify your Password</label>
+            <input type="verify password " placeholder=" verify Password" id="verify password2" required />
+            <button type="submit" id="btn2" value="submit" onclick="registerClick(event)">
+                Register
+            </button>
+            <label for="form-switch">Sign In Now..</label>
         </form>
     </div>
     <script src="index.js"></script>
